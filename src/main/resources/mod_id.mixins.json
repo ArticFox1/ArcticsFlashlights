@@ -14,7 +14,7 @@
   },
   "client": [
     "ItemRendererAccessor",
-    "ItemRendererMixin",
+    "ItemRenderMixin",
     "ModelLoaderMixin"
   ]
 }
