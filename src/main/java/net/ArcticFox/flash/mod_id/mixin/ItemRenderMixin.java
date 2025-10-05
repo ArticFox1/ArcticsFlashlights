@@ -18,7 +18,7 @@ public abstract class ItemRenderMixin {
     @ModifyVariable(method = "renderItem(Lnet/minecraft/item/ItemStack;Lnet/minecraft/client/render/model/json/ModelTransformationMode;ZLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;IILnet/minecraft/client/render/model/BakedModel;)V", at = @At("HEAD"), argsOnly = true)
     public BakedModel useFlashlightModel(BakedModel value, ItemStack stack, ModelTransformationMode renderMode, boolean leftHanded, MatrixStack matricies, VertexConsumerProvider vertexConsumers, int light, int overlay) {
         if (stack.isOf(ItemRegistry.FLASHLIGHT) && renderMode != ModelTransformationMode.GUI) {
-            return  ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Main.MOD_ID, "Flashlight Model 3D", "inventory"));
+            return  ((ItemRendererAccessor) this).course$getModels().getModelManager().getModel(new ModelIdentifier(Main.MOD_ID, "Flashlight Model 3D", "inventory"));
         }
         return value;
     }
