@@ -1,5 +1,6 @@
 package net.ArcticFox.flash.mod_id;
 
+import net.ArcticFox.flash.mod_id.items.ItemRegistry;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,5 +12,6 @@ public class Main implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ItemRegistry.RegisterItems();
     }
 }
